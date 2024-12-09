@@ -1,7 +1,24 @@
+Voici une version corrigée et structurée de ton texte :
+
+---
+
 # FORMENSCOP
 
+## Gestion de Git, GitHub et des commits
 
+### Les commits 
+Pour une meilleure lisibilité et uniformité, les commits doivent :
+- Être rédigés en français avec des phrases simples
+- Utiliser **Gitmoji** pour indiquer le type de changement (`✨`, `🐛`, etc.).
 
+### Gestion des branches
+
+- **`main`** : Branche principale utilisée pour la mise en production.
+- **`test`** : Branche intermédiaire qui servira de future `main`. Les tests et les validations y sont en cours.
+- **`dev`** : Branche principale de développement, où les autres branches sont fusionnées.
+- **`back/feat/nom-de-feature`** : Branche dédiée au développement d'une nouvelle fonctionnalité côté back-end.
+
+Si tu veux ajouter ou clarifier certains points, n'hésite pas ! 😊
 ## Environnement de développement
 
 ### Back (Laravel)
