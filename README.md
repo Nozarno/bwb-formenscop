@@ -76,3 +76,14 @@ Pour installer API Platform dans le projet Laravel :
 docker compose -f compose.dev-back.yml run --rm composer require api-platform/laravel
 docker compose -f compose.dev-back.yml run --rm artisan api-platform:install
 ```
+
+
+### Le Frontend (Vite + React) avec TypeScript
+
+Pour le développement, nous travaillons dans le conteneur via la CLI.  
+Pensez à ouvrir le port **5173** pour permettre l'accès.
+
+Commande pour démarrer le conteneur :
+```bash
+docker compose -f compose.dev-front.yml run --rm -p 5173:5173 node sh
+```  
