@@ -1,0 +1,14 @@
+services:
+    node-dev:
+        build:
+            context: .
+            dockerfile: ./docker/node.Dockerfile
+        volumes:
+            - ./front:/app             # Synchronisation des fichiers source
+            - /app/node_modules          # Évite les conflits de node_modules entre hôte et conteneur
+        ports:
+            - "5173:5173"                # Expose le port de développement Vite (par défaut 5173)
+        environment:
+            - CHOKIDAR_USEPOLLING=true   # Activation du polling pour surveiller les fichiers
+        stdin_open: true
+        tty: true
