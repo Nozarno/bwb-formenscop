@@ -1,6 +1,3 @@
-Voici une version corrigée et structurée de ton texte :
-
----
 
 # FORMENSCOP
 
