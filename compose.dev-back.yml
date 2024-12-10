@@ -43,6 +43,7 @@ services:
         volumes:
             - ./back:/var/www/html
         working_dir: /var/www/html
+        user: "1000:1000"
 
     artisan:
         build:
@@ -53,6 +54,7 @@ services:
             - ./back:/var/www/html
         working_dir: /var/www/html
         entrypoint: ['php', 'artisan']
+        user: "1000:1000"
 
     npm-laravel:
         image: node:current-alpine

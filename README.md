@@ -67,7 +67,7 @@ Ensuite, ouvrez votre navigateur et accédez à [http://localhost](http://localh
 1. Éditez le fichier `back/.env` pour utiliser les mêmes informations que les variables d'environnement du fichier `compose.dev-back.yml`.
 2. Exécutez la commande suivante pour appliquer les migrations :
    ```bash
-   docker compose run --rm artisan migrate
+   docker compose -f compose.dev-back.yml run --rm artisan migrate
    ```
 
 #### 5. Installation d'API Platform
